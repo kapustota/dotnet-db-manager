@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <button id="exportPdfBtn" style="position: absolute; top: 10px; right: 10px;">Export to PDF</button>
+    <h1>Articles</h1>
+    <form id="articleForm">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <textarea id="content" placeholder="Content" required></textarea>
+        <textarea id="annotation" placeholder="Annotation"></textarea> 
+        <input type="datetime-local" id="publishedDate" required>
+        <button type="submit">Add Article</button>
+    </form>
+    
+    <!-- Форма поиска -->
+    <h2>Search Articles</h2>
+    <form id="searchForm">
+        <input type="text" id="searchTitle" placeholder="Search by Title">
+        <input type="text" id="searchAuthor" placeholder="Search by Author">
+        <button type="submit">Search</button>
+    </form>
+    <div id="searchResults"></div>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
